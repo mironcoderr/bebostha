@@ -1,0 +1,484 @@
+/*============================================INDEX PAGE RESPONSIVE PART START===============================*/
+@media (max-width: 575px) {
+/*---------------------------------
+     575px index menu part start
+----------------------------------*/
+    #header-part {
+        display: none;
+    }
+    
+    .navbar {
+        padding: 15px !important;
+    }
+    
+    .navbar a img {
+        height: 30px;
+    }
+    
+    .navbar-toggler i {
+        color: #2c2b33;
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    
+    button:focus {
+        outline: none !important;
+    }
+    
+    .navbar-collapse {
+        text-align: center;
+        position: relative;
+    }
+    
+    .navbar-collapse:after {
+        position: absolute;
+        content: "";
+        top: 15px;
+        left: 0px;
+        width: 100%;
+        height: 1px;
+        background: #ddd;
+    }
+    
+    .nav-link {
+        padding: 0px !important;
+    }
+    
+    .navbar ul {
+        padding-top: 50px;
+    }
+    
+    .navbar ul li a {
+        font-size: 14px;
+    }
+    
+    .nav-item {
+        margin-bottom: 30px !important;
+    }
+    
+    .show {
+        width: 290px;
+        margin: 0 auto;
+    }
+    
+    .dropdown-item {
+        padding: 15px 18px !important;
+    }
+    
+    .dropdown-section {
+        flex-wrap: wrap;
+    }
+    
+    .dropdown-text p {
+        text-transform: capitalize;
+    }
+    
+    .dropdown-app {
+        display: inherit;
+        text-align: center;
+    }
+    
+    .dropdown-app h3 {
+        font-size: 18px;
+        margin-bottom: 8px !important;
+    }
+    
+    .dropdown-app img {
+        margin-left: 0px;
+    }
+/*---------------------------------
+     575px index menu part end
+----------------------------------*/
+    
+/*---------------------------------
+    575px index login part start
+----------------------------------*/
+    .login-cover {
+        padding: 30px 15px;
+    }
+    
+    .login-cross i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        top: -20px;
+    }
+    
+    .login-cover h3 {
+        font-size: 26px;
+    }
+    
+    .login-input input::placeholder {
+        font-size: 14px;
+    }
+    
+    .login-input i {
+        font-size: 14px;
+    }
+    
+    .login-input input {
+        width: 250px;
+        height: 35px;
+    }
+    
+    .login-cover button {
+        padding: 10px 35px;
+    }
+/*---------------------------------
+     575px index login part end
+----------------------------------*/
+    
+/*---------------------------------
+    575px index banner part start
+----------------------------------*/
+    .banner-content h1 {
+        font-size: 30px;
+        width: 250px;
+        margin: 0 auto;
+    }
+    
+    .banner-input form {
+        display: inherit;
+    }
+    
+    .input-box {
+        margin-right: 0px;
+    }
+    
+    .input-box input::placeholder {
+        font-size: 14px;
+    }
+    
+    .input-box i {
+        font-size: 14px;
+    }
+    
+    .banner-input button {
+        width: 120px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+        margin-top: 25px;
+    }
+    
+    .banner-overlay {
+        padding: 52px 0px 60px;
+    }
+/*---------------------------------
+     575px index banner part end
+----------------------------------*/
+    
+/*---------------------------------
+     575px index store part start
+----------------------------------*/
+    #store-part {
+        padding: 60px 0px 0px;
+    }
+    
+    .sub-heading h2 {
+        width: 290px;
+        font-size: 24px;
+    }
+    
+    .sub-heading p {
+        font-size: 14px;
+    }
+    
+    .sub-heading p {
+        margin: 25px auto!important;
+    }
+    
+    .store-main {
+        width: 320px;
+        margin: auto;
+    }
+    
+    .store-type {
+        width: 100px;
+        padding: 20px 0px;
+        margin: 3px;
+    }
+    
+    .store-type img {
+        height: 24px;
+    }
+    
+    .store-type p {
+        font-size: 14px;
+    }
+/*---------------------------------
+     575px index store part end
+----------------------------------*/
+    
+/*---------------------------------
+    575px index detail part start
+----------------------------------*/
+    #detail-part {
+        padding: 60px 0px 0px;
+    }
+    
+    .detail-content {
+        width: 290px;
+        margin: 0 auto 35px;
+    }
+    
+    .detail-content h2 {
+        font-size: 24px;
+    }
+    
+    .list-heading i {
+        font-size: 14px;
+    }
+    
+    .list-heading h3 {
+        font-size: 16px;
+    }
+    
+    .detail-list p {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    .detail-video {
+        width: 290px;
+        margin: 0 auto;
+    }
+    
+    .detail-overlay a i {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 20px;
+    }
+/*---------------------------------
+     575px index detail part end
+----------------------------------*/
+    
+/*---------------------------------
+     575px index city part start
+----------------------------------*/
+    #city-part {
+        padding: 60px 0px;
+    }
+    
+    .city-heading h2 {
+        width: 290px;
+        font-size: 24px;
+    }
+    
+    .city-heading p {
+        font-size: 14px;
+        margin: 25px auto !important;
+    }
+    
+    .city-main {
+        width: 290px;
+        margin: 0 auto;
+    }
+    
+    .city-card {
+        margin: 5px;
+    }
+    
+    .city-content {
+        height: 110px;
+        width: 86px;
+    }
+    
+    .city-content a i {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        margin-top: 35px;
+    }
+    
+    .city-content h3 {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+/*---------------------------------
+     575px index city part end
+----------------------------------*/
+    
+/*---------------------------------
+     575px index app part start
+----------------------------------*/
+    .app-content {
+        text-align: center;
+    }
+    
+    .app-content h2 {
+        font-size: 24px;
+    }
+    
+    .app-content p {
+        font-size: 14px;
+        width: 290px;
+        margin: 25px auto 0;
+    }
+    
+    .app-detail {
+        justify-content: center;
+    }
+    
+    .app-circle {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .app-mode h3 {
+        font-size: 18px;
+    }
+    
+    .app-download a img {
+        width: 135px;
+        height: 40px;
+        margin-right: 0px;
+    }
+    
+    .app-download {
+        margin: 25px 0px 0px;
+    }
+    
+    .app-phone img {
+        display: none;
+    }
+/*---------------------------------
+     575px index app part end
+----------------------------------*/
+    
+/*---------------------------------
+     575px index blog part start
+----------------------------------*/
+    #blog-part {
+        padding: 60px 0px;
+    }
+    
+    .blog-heading {
+        text-align: center;
+        margin-bottom: 90px;
+    }
+    
+    .blog-heading h2 {
+        font-size: 24px;
+    }
+    
+    .blog-main {
+        width: 290px;
+        margin: 0 auto;
+    }
+    
+    .dandik {
+        width: 40px;
+        top: -70px;
+        left: 58%;
+        transform: translateX(-50%);
+    }
+    
+    .bamdik {
+        width: 40px;
+        top: -70px;
+        left: 42%;
+        transform: translateX(-50%);
+    }
+    
+    .blog-subject span {
+        font-size: 14px;
+    }
+    
+    .blog-content h3 {
+        font-size: 18px;
+    }
+/*---------------------------------
+     575px index blog part end
+----------------------------------*/
+    
+/*---------------------------------
+    575px index footer part start
+----------------------------------*/
+    #footer-part {
+        padding: 40px 0px 0px;
+    }
+    
+    .link-section {
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        width: 290px;
+        margin: 0 auto;
+    }
+    
+    .link p {
+        font-size: 14px;
+    }
+    
+    .icon-section {
+        text-align: center;
+        display: inherit;
+        padding: 30px 0px;
+        width: 290px;
+        margin: 0 auto;
+    }
+    
+    .footer-app {
+        margin-bottom: 30px;
+    }
+    
+    .footer-app a {
+        display: inline-block;
+    }
+    
+    .footer-app a:nth-child(1) {
+        margin-bottom: 0px;
+    }
+    
+    .footer-app a img {
+        width: 140px;
+    }
+    
+    .social-icon {
+        margin-bottom: 25px;
+    }
+    
+    .social-icon ul li a i {
+        font-size: 18px;
+    }
+    
+    .currency {
+        justify-content: center;
+    }
+    
+    .currency img {
+        height: 18px;
+    }
+    
+    .currency h4 {
+        font-size: 16px;
+    }
+    
+    .end-part p {
+        font-size: 14px;
+    }
+/*---------------------------------
+     575px index footer part end
+----------------------------------*/
+    
+}
+/*============================================INDEX PAGE RESPONSIVE PART END=============================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

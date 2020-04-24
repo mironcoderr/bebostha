@@ -1,0 +1,1796 @@
+/*======================================
+         COMMON CSS PART START
+=======================================*/
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+label {
+    margin-bottom: 0 !important;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1180px !important;
+}
+/*======================================
+         COMMON CSS PART END
+=======================================*/
+
+
+/*======================================
+            HEADER PART START
+=======================================*/
+#header-part {
+    background: #ff7060;
+    padding: 6px 0px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-phone, 
+.header-social ul {
+    display: flex;
+    align-items: baseline;
+}
+
+.header-phone h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    margin-right: 15px;
+}
+
+.header-phone i {
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.header-phone p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-social ul li {
+    margin: 0px 10px;
+}
+
+.header-social ul li p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+.header-social ul li a i {
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+}
+/*======================================
+            HEADER PART END
+=======================================*/
+
+
+/*======================================
+            MENU PART START
+=======================================*/
+.navbar {
+    padding: 0px 15px !important;
+}
+
+.navbar-brand img {
+    width: auto;
+    height: 40px;
+}
+
+.navbar ul li a {
+    color: #2c2b33;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+.nav-link {
+    padding: 30px 18px !important;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.nav-link:hover {
+    background: #fff0ef;
+}
+
+.dropdown-menu {
+    top: 98% !important;
+}
+
+.service-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-item {
+    padding: 10px 40px !important;
+}
+
+.dropdown-item:hover {
+    background: #fff0ef !important;
+}
+
+.dropdown-item:active {
+    color: #fff !important;
+    background: #ff7060 !important;
+}
+
+.menu-user {
+    width: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-user a {
+    color: #2c2b33;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background: #fff0ef;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.menu-user a:hover {
+    color: #fff;
+    background: #ff7060;
+}
+
+.custom-select {
+    width: auto !important;
+    height: auto !important;
+    color: #2c2b33 !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    font-family: 'Roboto', sans-serif !important;
+    border: none !important;
+    background: #fff0ef !important;
+    text-transform: capitalize !important;
+    padding: 10px 25px 10px 25px !important;
+    cursor: pointer;
+}
+
+.custom-select:hover {
+    color: #fff !important;
+    background: #ff7060 !important;
+}
+
+.custom-select:focus {
+    box-shadow: none !important;
+}
+/*======================================
+             MENU PART END
+=======================================*/
+
+
+/*======================================
+          INDEX LOGIN PART START
+=======================================*/
+#login-part {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    display: none;
+}
+
+.login-cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 50px 30px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.login-cross i {
+    display: inline-block;
+    font-size: 18px;
+    color: #ff7060;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login-cover h3 {
+    color: #2c2b33;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 30px !important;
+}
+
+form .login-input:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+.login-input {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bbb;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.login-input:focus-within {
+    border-bottom: 1px solid #ff7060;
+}
+
+.login-input input {
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.login-input input::placeholder {
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-input i {
+    font-size: 16px;
+    color: #ff7060;
+}
+
+.login-forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login-check {
+    display: flex;
+    align-items: center;
+}
+
+.login-check input {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.login-check p {
+    color: #2c2b33;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-forgot a {
+    color: #2c2b33;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.login-forgot a:hover {
+    color: #ff7060;
+}
+
+.login-cover button {
+    border: none;
+    outline: none !important;
+    padding: 12px 40px;
+    border-radius: 5px;
+    background: #ff7060;
+    display: inline-block;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 40px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.login-cover button:hover {
+    background: #f05c4c;
+}
+
+.login-cover h4 {
+    color: #2c2b33;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 45px;
+}
+
+.login-cover h4 a {
+    color: #ff7060;
+    display: inline-block;
+}
+
+.login-cover h4 a:hover {
+    text-decoration: underline !important;
+}
+/*======================================
+          INDEX LOGIN PART END
+=======================================*/
+
+
+/*======================================
+        INDEX BANNER PART START
+=======================================*/
+
+.banner-overlay {
+    background: #fff0ef;
+    padding: 142px 0px 150px;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.banner-content h1 {
+    color: #2c2b33;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+.banner-input {
+    padding: 20px;
+    margin-top: 27px;
+    border-radius: 5px;
+    background: #fff0ef;
+    display: inline-block;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.banner-input form {
+    display: flex;
+    align-items: center;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    border-bottom: 1px solid #bbb;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.input-box:focus-within {
+    border-bottom: 1px solid #ff7060;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    background: none;
+    height: 55px;
+    width: 230px;
+    padding: 0px 10px;
+}
+
+.input-box input::placeholder {
+    color: #696969;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-box i {
+    color: #ff7060;
+    font-size: 18px;
+}
+
+.banner-input button {
+    border: none;
+    height: 55px;
+    width: 150px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 5px;
+    background: #ff7060;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.banner-input button:hover {
+    background: #f05c4c;
+}
+/*======================================
+         INDEX BANNER PART END
+=======================================*/
+
+
+/*======================================
+         INDEX STORE PART START
+=======================================*/
+#store-part {
+    background: #fff;
+    padding: 100px 0px 0px;
+}
+
+.sub-heading {
+    text-align: center;
+}
+
+.sub-heading h2 {
+    width: 630px;
+    color: #2c2b33;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+}
+
+.sub-heading p {
+    margin: 23px 0px 50px !important;
+}
+
+.store-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.store-type {
+    width: 145px;
+    padding: 30px 0px;
+    text-align: center;
+    background: #fff0ef;
+    cursor: pointer;
+    margin: 10px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.store-type:hover {
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+}
+
+.store-type img {
+    width: auto;
+    height: 40px;
+}
+
+.store-type p {
+    margin-top: 10px;
+}
+/*======================================
+         INDEX STORE PART END
+=======================================*/
+
+
+/*======================================
+         INDEX DETAIL PART START
+=======================================*/
+#detail-part {
+    background: #fff;
+    padding: 100px 0px 0px;
+}
+
+.detail-content h2 {
+    color: #2c2b33;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-bottom: 33px !important;
+}
+
+.detail-list {
+     margin-bottom: 35px;
+}
+
+.detail-list:last-child {
+    margin-bottom: 0px;
+}
+
+.list-heading {
+    display: flex;
+    align-items: baseline;
+}
+
+.list-heading i {
+    color: #ff7060;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.list-heading h3 {
+    color: #2c2b33;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.detail-list p {
+    width: 470px;
+    margin-top: 8px;
+}
+
+.detail-video {
+    position: relative;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.detail-video img {
+    width: 100%;
+    height: auto;
+}
+
+.detail-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.detail-overlay a i {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+}
+/*======================================
+         INDEX DETAIL PART END
+=======================================*/
+
+
+/*======================================
+          CATEGORY PART START
+=======================================*/
+#category-part {
+    background: #fff;
+    padding: 100px 0px 0px;
+}
+
+.category-heading {
+    text-align: center;
+}
+
+.category-heading h2 {
+    color: #2c2b33;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.category-btn a {
+    display: inline-block;
+    color: #2c2b33;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.category-btn a:hover {
+    color: #ff7060;
+}
+
+.category-child {
+    width: 200px !important;
+    height: auto;
+    margin: 0px 15px;
+    border-radius: 5px;
+    border: 1px solid #f5f5f5;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.category-child:hover {
+    border: 1px solid #ff7060;
+}
+
+.category-img {
+    background: url(../images/category/category-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    transform: scale(0.9);
+    position: relative;
+}
+
+.category-2 {
+    background: url(../images/category/category-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.category-3 {
+    background: url(../images/category/category-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.category-4 {
+    background: url(../images/category/category-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.category-5 {
+    background: url(../images/category/category-5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.category-6 {
+    background: url(../images/category/category-6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.category-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.category-child:hover .category-overlay {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.category-cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.category-child:hover .category-cover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.category-cover a i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(#ff7060, #f55d4c);
+    font-size: 18px;
+    color: #fff;
+    display: inline-block;
+} 
+
+.category-cover p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.category-text {
+    width: 100%;
+    padding: 5px 15px 15px 15px;
+    text-align: center;
+}
+
+.category-text h3 {
+    color: #2c2b33;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.category-child:hover .category-text h3 {
+    color: #ff7060;
+}
+
+.category-text h3 span {
+    color: #999;
+    font-size: 14px;
+}
+
+.category-parent ul li button {
+    display: none;
+}
+
+.category-parent .dandik {
+    position: absolute;
+    top: -80px;
+    right: 0px;
+    width: 45px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #f1f1f1;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.category-parent .bamdik {
+    position: absolute;
+    top: -80px;
+    right: 55px;
+    width: 45px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #f1f1f1;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.category-parent .dandik:hover,
+.category-parent .bamdik:hover {
+    background: #ff7060;
+    color: #fff;
+}
+/*======================================
+           CATEGORY PART END
+=======================================*/
+
+
+/*======================================
+           FREELANCER PART START
+=======================================*/
+#free-part {
+    background: #fff;
+    padding: 100px 0px 0px;
+}
+
+.free-heading {
+    text-align: center;
+}
+
+.free-heading h2 {
+    color: #2c2b33;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.free-btn a {
+    display: inline-block;
+    color: #2c2b33;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.free-btn a:hover {
+    color: #ff7060;
+}
+
+.free-child {
+    width: 258px !important;
+    border-radius: 5px;
+    margin: 0px 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.free-img {
+    background: url(../images/freelancer/free-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.free-content {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.free-person {
+    background: url(../images/freelancer/person-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.free-detail h3 {
+    color: #2c2b33;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+.free-detail p {
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+.free-parent ul li button {
+    display: none;
+}
+
+.free-parent .dandik {
+    position: absolute;
+    top: -80px;
+    right: 0px;
+    width: 45px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #f1f1f1;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.free-parent .bamdik {
+    position: absolute;
+    top: -80px;
+    right: 55px;
+    width: 45px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #f1f1f1;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.free-parent .dandik:hover,
+.free-parent .bamdik:hover {
+    background: #ff7060;
+    color: #fff;
+}
+/*======================================
+           FREELANCER PART END
+=======================================*/
+
+
+/*======================================
+          INDEX CITY PART START
+=======================================*/
+#city-part {
+    background: #fff;
+    padding: 100px 0px 185px;
+}
+
+.city-heading {
+    text-align: center;
+}
+
+.city-heading h2 {
+    width: 500px;
+    color: #2c2b33;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin: 0 auto;
+}
+
+.city-heading p {
+    margin: 23px 0px 50px !important;
+}
+
+.city-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.city-card {
+    background: url(../images/cities/dhaka.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 15px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.city-card:nth-child(2) {
+    background: url(../images/cities/cumilla.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.city-card:nth-child(3) {
+    background: url(../images/cities/chittagong.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.city-card:nth-child(4) {
+    background: url(../images/cities/rajshahi.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.city-card:nth-child(5) {
+    background: url(../images/cities/barishal.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.city-card:nth-child(6) {
+    background: url(../images/cities/tongi.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.city-card:nth-child(7) {
+    background: url(../images/cities/keraniganj.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.city-card:nth-child(8) {
+    background: url(../images/cities/khulna.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.city-card:nth-child(9) {
+    background: url(../images/cities/savar.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.city-card:nth-child(10) {
+    background: url(../images/cities/sylhet.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.city-card:hover {
+    transform: scale(1.05);
+}
+
+.city-content {
+    height: 250px;
+    width: 200px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.05);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.city-content:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.city-content a i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(#ff7060, #f55d4c);
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 100px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.city-content:hover a i {
+    visibility: visible;
+    opacity: 1;
+}
+
+.city-content h3 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+/*======================================
+           INDEX CITY PART END
+=======================================*/
+
+
+/*======================================
+           INDEX APP PART START
+=======================================*/
+#app-part {
+    background: #ff7060;
+    padding: 60px 0px;
+}
+
+.app-content h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.app-detail {
+    display: flex;
+    align-content: center;
+    margin-top: 35px;
+}
+
+.app-mode {
+    display: flex;
+    align-items: baseline;
+    cursor: pointer;
+}
+
+.app-mode:nth-child(2) {
+    margin-left: 30px;
+}
+
+.app-circle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-right: 10px;
+}
+
+.app-mode h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    letter-spacing: 1px;
+}
+
+.app-content p {
+    color: #fff;
+    letter-spacing: 0.5px;
+    margin-top: 25px;
+}
+
+.app-download {
+    margin-top: 50px;
+}
+
+.app-download a img {
+    width: 180px;
+    height: 60px;
+    display: inline-block;
+    margin-right: 15px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.app-download a img:hover {
+    opacity: 0.7;
+}
+
+.app-phone {
+    position: relative;
+}
+
+.app-phone img {
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*======================================
+           INDEX APP PART END
+=======================================*/
+
+
+/*======================================
+           INDEX BLOG PART START
+=======================================*/
+#blog-part {
+    background: #fff;
+    padding: 180px 0px 100px;
+}
+
+.blog-heading {
+    margin-bottom: 50px;
+}
+
+.blog-heading h2 {
+    color: #2c2b33;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.blog-main ul li button {
+    display: none;
+}
+
+.blog-main .dandik {
+    position: absolute;
+    top: -95px;
+    right: 0px;
+    width: 50px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #f1f1f1;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.blog-main .bamdik {
+    position: absolute;
+    top: -95px;
+    right: 55px;
+    width: 50px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #f1f1f1;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.blog-main .dandik:hover,
+.blog-main .bamdik:hover {
+    background: #ff7060;
+    color: #fff;
+}
+
+.blog-card {
+    margin: 0px 15px;
+}
+
+.blog-img img {
+    width: 100%;
+}
+
+.blog-content {
+    padding-top: 25px;
+}
+
+.blog-subject {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-subject span {
+    display: inline-block;
+    color: #777;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.blog-content h3 {
+    color: #2c2b33;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-top: 5px;
+}
+/*======================================
+           INDEX BLOG PART END
+=======================================*/
+
+
+/*======================================
+          INDEX FOOTER PART START
+=======================================*/
+#footer-part {
+    background: #fff;
+    padding: 70px 0px 0px;
+    border-top: 1px solid #ddd;
+}
+
+.link-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 65px;
+    border-bottom: 1px solid #ddd;
+}
+
+.link-menu {
+    margin: 15px;
+}
+
+.link-menu h3 {
+    color: #2c2b33;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 20px !important;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.link:last-child {
+    margin-bottom: 0px;
+}
+
+.link:hover {
+    transform: translateX(5px);
+}
+
+.link i {
+    color: #ff7060;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.link p {
+    color: #2c2b33;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.link:hover p {
+    color: #ff7060;
+}
+
+.icon-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.footer-app a {
+    display: block;
+}
+
+.footer-app a img {
+    width: 150px;
+    height: 50px;
+}
+
+.footer-app a:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.social-icon ul li {
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.social-icon ul li a i {
+    display: inline-block;
+    font-size: 22px;
+    color: #666;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.social-icon ul li a i:hover {
+    color: #ff7060;
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #f1f1f1;
+}
+
+.currency img {
+    width: auto;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.currency h4 {
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.end-part {
+    background: #2c2b33;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.end-part p {
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.end-part p span {
+    color: #ff7060;
+}
+/*======================================
+          INDEX FOOTER PART END
+=======================================*/
+
+
+
+/*======================================
+         SIGNUP PAGE PART START
+=======================================*/
+#signup-part {
+    background: #fff;
+    padding: 30px 0px;
+}
+
+.signup-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-heading a {
+    display: inline-block;
+    color: #2c2b33;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    padding: 10px 30px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.signup-heading a:hover {
+    color: #fff;
+    background: #ff7060;
+    border: 1px solid #ff7060;
+}
+
+.signup-heading i {
+    color: #2c2b33;
+    font-size: 20px;
+    margin: 0px 15px;
+}
+
+.signup {
+    text-align: center;
+    padding: 50px 45px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.signup a img {
+    width: auto;
+    height: 45px;
+    display: inline-block;
+    margin-bottom: 23px;
+}
+
+.signup h1 {
+    color: #2c2b33;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-bottom: 7px !important;
+}
+
+.signup h2 {
+    color: #2c2b33;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.signup-input {
+    margin-top: 30px;
+}
+
+.signup-input input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 30px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.signup-input input:focus-within {
+    border-bottom: 1px solid #ff7060;
+}
+
+.signup-input input:last-child {
+    margin-bottom: 0px;
+}
+
+.signup-input input::placeholder {
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.signup-radio-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 25px 0px 17px;
+}
+
+.signup-radio {
+    display: flex;
+    align-items: center;
+}
+
+.signup-radio input {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.signup-radio label {
+    color: #2c2b33;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.signup-condition p {
+    color: #2c2b33;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.signup button {
+    border: none;
+    outline: none !important;
+    width: 100%;
+    padding: 14px 0px;
+    background: #ff7060;
+    display: inline-block;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-top: 35px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.signup button:hover {
+    background: #f05c4c;
+}
+
+.signup h3 {
+    color: #2c2b33;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-top: 30px;
+}
+
+.signup h3 a {
+    color: #ff7060;
+}
+
+.signup h3 a:hover {
+    text-decoration: underline !important;
+}
+/*======================================
+         SIGNUP PAGE PART END
+=======================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
